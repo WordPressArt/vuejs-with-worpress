@@ -25,7 +25,7 @@ add_action( 'wp_enqueue_scripts', 'header_style' );
  * @param bool $in_footer (optional) Whether to enqueue the script before </head> or before </body>
  */
 function footer_rest_api_script() {
-	wp_enqueue_script('rest-api-jquery-test', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7' );
+	// wp_enqueue_script('rest-api-jquery-test', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7' );
 	wp_enqueue_script('rest-api-custom-test-vue', get_template_directory_uri() .'/js/vue.js' );
 	wp_enqueue_script('rest-api-custom-test-vue-resources', get_template_directory_uri() .'/js/vue-resource.js' );
 	wp_enqueue_script('rest-api-custom-test-router', get_template_directory_uri() .'/js/vue-router.js' );
